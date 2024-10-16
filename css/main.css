@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"), url("../fonts/ArchivoBlack-Regular.woff") format("woff"), url("../fonts/ArchivoBlack-Regular.eot") format("eot"), url("../fonts/ArchivoBlack-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-VariableFont.woff2") format("woff2"), url("../fonts/Nunito-VariableFont.woff") format("woff"), url("../fonts/Nunito-VariableFont.eot") format("eot"), url("../fonts/Nunito-VariableFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Italic-VariableFont.woff2.woff2") format("woff2"), url("../fonts/Nunito-Italic-VariableFont.woff") format("woff"), url("../fonts/Nunito-Italic-VariableFont.eot") format("eot"), url("../fonts/Nunito-Italic-VariableFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+.conteiner {
+  width: 1208px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+  .conteiner {
+    width: 704px;
+  }
+}
+@media (max-width: 768px) {
+  .conteiner {
+    width: 304px;
+  }
+}/*# sourceMappingURL=main.css.map */
