@@ -35,6 +35,133 @@
     font-weight: bold;
 }
 
+@mixin H1 {
+    font-family: 'ArchivoBlack';
+    font-size: 58px;
+    line-height: 120%;
+}
+
+@mixin H2 {
+    font-family: 'ArchivoBlack';
+    font-size: 46px;
+    line-height: 120%;
+}
+
+@mixin H3 {
+    font-family: 'ArchivoBlack';
+    font-size: 36px;
+    line-height: 120%;
+}
+
+@mixin H4 {
+    font-family: 'ArchivoBlack';
+    font-size: 30px;
+    line-height: 120%;
+}
+
+@mixin H5 {
+    font-family: 'ArchivoBlack';
+    font-size: 26px;
+    line-height: 120%;
+}
+
+@mixin T21_R {
+    font-family: 'Nunito';
+    font-size: 21px;
+    line-height: 160%;
+    font-weight: normal;
+}
+
+@mixin T21_B {
+    font-family: 'Nunito';
+    font-size: 21px;
+    line-height: 160%;
+    font-weight: bold;
+}
+
+@mixin T18_R {
+    font-family: 'Nunito';
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: normal;
+}
+
+@mixin T18_B {
+    font-family: 'Nunito';
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: normal;
+}
+
+@mixin T18_B {
+    font-family: 'Nunito';
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: normal;
+}
+
+@mixin T15_R_SLS {
+    font-family: 'Nunito';
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: normal;
+}
+
+@mixin T15_M_SLS {
+    font-family: 'Nunito';
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: medium;
+}
+
+@mixin T15_B_SLS {
+    font-family: 'Nunito';
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: bold;
+}
+
+@mixin T13_UP_M {
+    font-family: 'Nunito';
+    font-size: 13px;
+    line-height: 160%;
+    font-weight: medium;
+    text-transform: uppercase;
+}
+
+@mixin T13_R_SLS {
+    font-family: 'Nunito';
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: normal;
+}
+
+@mixin T13_M_SLS {
+    font-family: 'Nunito';
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: medium;
+}
+
+@mixin T13_R_SLS {
+    font-family: 'Nunito';
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: normal;
+}
+
+@mixin T13_UP_B {
+    font-family: 'Nunito';
+    font-size: 13px;
+    line-height: 160%;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 .conteiner {
