@@ -169,7 +169,7 @@ $mc_white: #FCFAF9;
 $mc_whiteTr90: #FCFAF9;
 $mc_pale: #E8E8E8;
 
-$tc_pink: #EC95B1;
+$tg_pink: #EC95B1;
 $tg_sky: #A4CCFE;
 $tg_violet: #D0B0FA;
 $tg_grass: #BEDB39;
@@ -196,22 +196,172 @@ $t_marine: #22C98B;
 
 
 
+body {
+    background: #FCFAF9E5;
 
+}
 
 .conteiner {
     width: 1208px;
     margin: 0 auto;
 }
 
+.logo {
+    display: block;
+    width: 110px;
+    height: 40px;
+    background: url(../assets/images/logo.svg);
+}
+
+.logo:hover, .logo:active {
+    display: block;
+    width: 110px;
+    height: 40px;
+    background: url(../assets/images/logo_hover.svg);
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   
+   &__right-menu {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    &__right-button {
+        width: 22px;
+        height: 24px;
+        background: url(../assets/images/icon/search.svg);
+        cursor: pointer;
+        border: none;
+    }
+
+    &__right-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        height: 24px;
+        @include T15_M_SLS();
+        text-transform: uppercase;
+        color: $mc_black;
+        text-decoration: none;
+        position: relative;
+        &:hover, &:active {
+            &::after {
+                display: block;
+                width: 66px;
+                height: 1.5px;
+                content: '';
+                background: $tg_grass;
+; 
+                position: absolute;
+                bottom: 3px;
+                border-radius: 1px;
+            }
+        }
+
+    }
+
+    &__right-icon {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(../assets/images/icon/ebac_icon_logo.svg);
+        background-repeat: no-repeat;
+    }
+
+
+
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        white-space: nowrap; 
+        text-decoration: none;
+        @include T15_M_SLS();
+        border-radius: 20px;
+        border: 1.2px solid $mc_gray15;
+        padding: 7.5px 17.5px;
+        color: $mc_black;
+    
+        &_active-c:hover, &_active-c:active {
+            background: $tg_mint;
+        }
+
+        &_active-d:hover, &_active-d:active {
+            background: $tg_pink;
+        }
+
+        &_active-p:hover, &_active-p:active {
+            background: $tg_sky;
+        }
+
+        &_active-a:hover, &_active-a:active {
+            background: $tg_violet;
+        }
+
+        &_active-g:hover, &_active-g:active {
+            background: $tg_grass;
+        }
+
+        &_active-m:hover, &_active-m:active {
+            background: $tg_tangerine;
+        }
+
+        &_active-s:hover, &_active-s:active {
+            background: $tg_turquoise;
+        }
+
+        &_active-n:hover, &_active-n:active {
+            background: $tg_colar;
+        }
+    }
+}
+   
+
 
 @media (max-width: 1279px) {
     .conteiner {
         width: 704px;
     }
+
+    .header {
+        &__menu {
+            order: 2;
+            padding-inline-start: 0;
+            // margin-block-start: 14px;
+            padding-block-start: 10px;
+            // padding-block-end: 10px;
+            height: 37px;
+            gap: 11px;
+            
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .conteiner {
-        width: 304px;
+        width: 320px;
     }
+
+    .header {
+        padding: 4px 6px;
+        &__menu {
+            overflow: scroll;
+            scrollbar-width: none;
+            gap: 8px;
+        }
+    }
+
 }
