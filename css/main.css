@@ -23,6 +23,161 @@ body {
   background: rgba(252, 250, 249, 0.8980392157);
 }
 
+.button {
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: medium;
+  color: #FCFAF9;
+  border: 1.4px solid #FCFAF9;
+  border-radius: 40px;
+  width: 240px;
+  height: 49px;
+  background: #1B1F21;
+}
+.button:hover {
+  color: #1B1F21;
+  background: #FCFAF9;
+}
+.button:disabled {
+  background: #1B1F21;
+  color: #FCFAF9;
+  border-color: #FCFAF9;
+  opacity: 0.9;
+}
+.button:focus {
+  border-radius: 2.4px solid #FCFAF9;
+  color: #FCFAF9;
+  background: #1B1F21;
+}
+.button_small {
+  width: 232px;
+  height: 59px;
+  background: #BEDB39;
+  position: relative;
+  color: #1B1F21;
+}
+.button_small:before {
+  content: "";
+  width: 95.91%;
+  height: 83.05%;
+  border: 1.5px solid #1B1F21;
+  border-radius: 32px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.button_small:hover {
+  background: #1B1F21;
+  color: #FCFAF9;
+}
+.button_small:disabled {
+  background: #BEDB39;
+  color: #1B1F21;
+  border-color: #1B1F21;
+  opacity: 0.9;
+}
+.button_small:focus {
+  border: 2px solid #1B1F21;
+  background-color: #BEDB39;
+  color: #1B1F21;
+}
+.button_small:focus:before {
+  display: none;
+}
+.button_large {
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: bold;
+  width: 280px;
+  height: 64px;
+  background: #9853F4;
+  color: #FCFAF9;
+}
+.button_large:hover {
+  background-color: #1B1F21;
+  color: #FCFAF9;
+}
+.button_large:disabled {
+  background: #9853F4;
+  color: #FCFAF9;
+  opacity: 0.9;
+}
+.button_large:focus {
+  background: #9853F4;
+  border: 2px solid #1B1F21;
+}
+.button_large-dark {
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: bold;
+  width: 280px;
+  height: 64px;
+  background: #9853F4;
+  color: #FCFAF9;
+}
+.button_large-dark:hover {
+  background-color: #DA3369;
+  color: #FCFAF9;
+}
+.button_large-dark:disabled {
+  background: #9853F4;
+  color: #FCFAF9;
+  opacity: 0.9;
+}
+.button_large-dark:focus {
+  background: #9853F4;
+  border: 2px solid #FCFAF9;
+}
+.button_long {
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: bold;
+  width: 280px;
+  height: 49px;
+  background: #FE6D44;
+  color: #FCFAF9;
+}
+.button_long:hover {
+  background-color: #1B1F21;
+  color: #FCFAF9;
+}
+.button_long:disabled {
+  background: #FE6D44;
+  color: #FCFAF9;
+  opacity: 0.9;
+}
+.button_long:focus {
+  background: #FE6D44;
+  border: 2px solid #1B1F21;
+}
+.button_long-dark {
+  font-family: "Nunito";
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: bold;
+  width: 280px;
+  height: 49px;
+  background: #9853F4;
+  color: #FCFAF9;
+}
+.button_long-dark:hover {
+  background-color: #DA3369;
+  color: #FCFAF9;
+}
+.button_long-dark:disabled {
+  background: #9853F4;
+  color: #FCFAF9;
+  opacity: 0.9;
+}
+.button_long-dark:focus {
+  background: #9853F4;
+  border: 2px solid #FCFAF9;
+}
+
 .conteiner {
   width: 1208px;
   margin: 0 auto;

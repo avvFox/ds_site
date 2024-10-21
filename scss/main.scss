@@ -86,18 +86,18 @@
     font-weight: normal;
 }
 
-@mixin T18_B {
+@mixin T18_M {
     font-family: 'Nunito';
     font-size: 18px;
     line-height: 160%;
-    font-weight: normal;
+    font-weight: medium;
 }
 
 @mixin T18_B {
     font-family: 'Nunito';
     font-size: 18px;
     line-height: 160%;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 @mixin T15_R_SLS {
@@ -198,6 +198,158 @@ $t_marine: #22C98B;
 
 body {
     background: #FCFAF9E5;
+
+}
+
+.button {
+    @include T18_M();
+    color: $mc_white;
+    border: 1.4px solid $mc_white;
+    border-radius: 40px;
+    width: 240px;
+    height: 49px;
+    background: $mc_black;
+    &:hover {
+        color: $mc_black;
+        background: $mc_white;
+    }
+
+    &:disabled {
+        background: $mc_black;
+        color: $mc_white;
+        border-color: $mc_white;
+        opacity: 0.9;
+    }
+
+    &:focus {
+        border-radius: 2.4px solid $mc_white;
+        color: $mc_white;
+        background: $mc_black;
+    }
+
+    &_small {
+        width: 232px;
+        height: 59px;
+        background: $tg_grass;
+        position: relative;
+        color: $mc_black;
+        &:before {    
+            content: '';
+            width: 95.91%;
+            height: 83.05%;
+            border: 1.5px solid $mc_black;
+            border-radius: 32px;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+        }
+        &:hover {
+            background: $mc_black;
+            color: $mc_white;
+        }
+        &:disabled {
+            background: $tg_grass;
+            color: $mc_black;
+            border-color: $mc_black;
+            opacity: 0.9;
+        }
+
+        &:focus {
+            border: 2px solid $mc_black;
+            background-color: $tg_grass;
+            color: $mc_black;
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    &_large {
+        @include T18_B();
+        width: 280px;
+        height: 64px;
+        background: $t_violet;
+        color: $mc_white;
+        &:hover {
+            background-color: $mc_black;
+            color: $mc_white;
+        }
+        &:disabled {
+            background: $t_violet;
+            color: $mc_white;
+            opacity: 0.9;
+        }
+        &:focus {
+            background: $t_violet;
+            border: 2px solid $mc_black;
+        }
+    }
+
+    &_large-dark {
+        @include T18_B();
+        width: 280px;
+        height: 64px;
+        background: $t_violet;
+        color: $mc_white;
+        &:hover {
+            background-color: $t_pink;
+            color: $mc_white;
+        }
+        &:disabled {
+            background: $t_violet;
+            color: $mc_white;
+            opacity: 0.9;
+        }
+        &:focus {
+            background: $t_violet;
+            border: 2px solid $mc_white;
+        }
+    }
+
+    &_long {
+        @include T18_B();
+        width: 280px;
+        height: 49px;
+        background: $t_coral;
+        color: $mc_white;
+        &:hover {
+            background-color: $mc_black;
+            color: $mc_white;
+        }
+        &:disabled {
+            background: $t_coral;
+            color: $mc_white;
+            opacity: 0.9;
+        }
+        &:focus {
+            background: $t_coral;
+            border: 2px solid $mc_black;
+        }
+    }
+
+    &_long-dark {
+        @include T18_B();
+        width: 280px;
+        height: 49px;
+        background: $t_violet;
+        color: $mc_white;
+        &:hover {
+            background-color: $t_pink;
+            color: $mc_white;
+        }
+        &:disabled {
+            background: $t_violet;
+            color: $mc_white;
+            opacity: 0.9;
+        }
+        &:focus {
+            background: $t_violet;
+            border: 2px solid $mc_white;
+        }
+    }
+
+
+
 
 }
 
@@ -340,14 +492,14 @@ body {
         &__menu {
             order: 2;
             padding-inline-start: 0;
-            // margin-block-start: 14px;
             padding-block-start: 10px;
-            // padding-block-end: 10px;
             height: 37px;
             gap: 11px;
             
         }
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -363,5 +515,6 @@ body {
             gap: 8px;
         }
     }
+
 
 }
